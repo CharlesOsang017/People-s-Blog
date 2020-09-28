@@ -137,7 +137,7 @@
     <div class="row">
       <div class="col-md-3">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header bg-secondary">
             <h2>Quote of the day...</h2>
           </div>
           <div class="card-body">
@@ -174,7 +174,7 @@
             {{ message }}
           </div>
           {% endfor %}
-          <form action="{{url_for('main.subscribe')}}" method="POST">
+          <!-- <form action="{{url_for('main.subscribe')}}" method="POST">
             <div class="form-group">
               <input type="email" form-control name="email" style="border-radius:10px;" placeholder="Enter email..."
                 required>
@@ -184,7 +184,7 @@
                 style="border-radius:10px;">
             </div>
 
-          </form>
+          </form> -->
         </div>
 
 
@@ -194,7 +194,7 @@
 
   <hr> -->
 
-  <Footer >
+  <!-- <Footer >
   <footer>
     <div class="container">
       <div class="row">
@@ -228,7 +228,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
@@ -253,7 +253,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Welcomt to the blogging site</title>
+  <title>Blogging Blogs</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -306,7 +306,7 @@
         <li style="color:white;padding:15px;">{{current_user.username}}</li>
 
         <li class="dropdown"><a href="#" class="dropdown-toggle text-light" data-toggle="dropdown"><i
-              class="fa fa-user"></i><strong class="ml-2">Welcome, {{current_user.username}}</strong> <b
+              class="fa fa-user"></i><strong class="ml-2">{{current_user.username}}</strong> <b
               class="caret"></b></a>
           <ul class="dropdown-menu bg-dark text-center">
 
