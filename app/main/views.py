@@ -164,7 +164,6 @@ def subscribe():
         new_email = Subscribe(email=email)
         db.session.add(new_email)
         db.session.commit()
-        # mail_message("Welcome to Blogging site","email/welcome_subscriber", new_email.email,new_email=new_email)
         flash('Thank you for your subscription')
         return redirect(url_for('main.index'))
         
