@@ -14,8 +14,8 @@
   <title>People's blog</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
   <link href="{{url_for('static', filename='css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
  
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('main.index')}}">Start Blogging</a>
+      <a class="navbar-brand" href="{{ url_for('main.index')}}">Blogging Blogs</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
         <!-- <li style="color:white;padding:15px;">{{current_user.username}}</li> -->
 
         <li class="dropdown"><a href="#" class="dropdown-toggle text-light" data-toggle="dropdown"><i
-              class="fa fa-user"></i><strong class="ml-2">Welcome, {{current_user.username}}</strong> <b
+              class="fa fa-user"></i><strong class="ml-2">{{current_user.username}}</strong> <b
               class="caret"></b></a>
           <ul class="dropdown-menu bg-dark text-center">
 
@@ -97,9 +97,8 @@
         </div>
       </div>
     </div>
-  </header>
-
-  <!-- Main Content -->
+    <br><br><br>
+      <!-- Main Content -->
   <div class="container-fluid text-center">
     <div class="row">
       <div class="col-md-3">
@@ -115,7 +114,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg- col-md-6 mx- tex-center">
+      <div class="col-lg- col-md-6 mx- tex-center text-white">
         {% for post in posts %}
         <div class="post-preview text-center">
           <a href="{{ url_for('main.post', post_id=post.id)}}">
@@ -131,6 +130,9 @@
         <hr>
         {% endfor %}
          <hr>
+  </header>
+
+
 
       </div>
       <div class="col-md-3">
