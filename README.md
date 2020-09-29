@@ -1,5 +1,9 @@
 # People's Blog
 
+## Description
+The People's blog is an app that allows users to create,submit, blogs based on categories and their satisfaction.This is a platform that allows you to express your views without restrictions
+
+
 ## Author
  * Charles Osango
 
@@ -12,4 +16,4 @@
 | :---------------- | :---------------: | ------------------: |
 | Display profile | **Click profile page** | Redirected to a page with your profile |
 | Display blogs | **On page load** | Each blog displays author, title, pitch, date comment tab |
-| To add a blog  | **Click an add blog** | Redirected to the pitch collection form|
+| To add a blog  | **Click an add blog** | Redirected to the blog collection form|
