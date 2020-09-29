@@ -29,6 +29,10 @@ The People's blog is an app that allows users to create,submit, blogs based on c
 * Flask micro-framework
 * Bootstrapt
 * CSS
-*  HTML
+* HTML
 * Heroku
+
+## Licence
+
+
 
