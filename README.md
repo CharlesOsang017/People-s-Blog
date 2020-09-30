@@ -33,6 +33,6 @@ https://blog-aap.herokuapp.com
 * Heroku
 
 ## Licence
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license/MIT)
 
-
-
+Copyrite (c) 2020 Charles Osango
